@@ -6,6 +6,9 @@ var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var path = require('path');
+
+var includeModule = process.env.npm_config_module ? [process.env.npm_config_module] : null;
 
 /**
  * Env
@@ -160,7 +163,8 @@ module.exports = function makeWebpackConfig () {
     config.plugins.push(
       new HtmlWebpackPlugin({
         template: './src/public/index.html',
-        inject: 'body'
+        inject: 'body',
+        chunks: includeModule
       }),
 
       // Reference: https://github.com/webpack/extract-text-webpack-plugin

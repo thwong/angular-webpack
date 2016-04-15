@@ -1,3 +1,9 @@
+var specs = 'src/**/*.spec.js';
+
+if(process.env.npm_config_module) {
+  specs = 'src/' + process.env.npm_config_module + '/**/*.spec.js';
+}
+
 // Reference: http://karma-runner.github.io/0.12/config/configuration-file.html
 module.exports = function karmaConfig (config) {
   config.set({
@@ -19,14 +25,16 @@ module.exports = function karmaConfig (config) {
 
     files: [
       // Grab all files in the app folder that contain .spec.
-      'src/tests.webpack.js'
+      'src/tests.webpack.js',
+      specs
     ],
 
     preprocessors: {
       // Reference: http://webpack.github.io/docs/testing.html
       // Reference: https://github.com/webpack/karma-webpack
       // Convert files with webpack and load sourcemaps
-      'src/tests.webpack.js': ['webpack', 'sourcemap']
+      'src/tests.webpack.js': ['webpack', 'sourcemap'],
+      'src/**/*.spec.js': ['webpack', 'sourcemap']
     },
 
     browsers: [
