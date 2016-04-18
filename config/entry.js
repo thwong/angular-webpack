@@ -6,7 +6,6 @@
  */
 module.exports = function(mode) {
   return mode.isTest ? {} : {
-    app: './src/app/app.js',
-    campaign: './src/campaign/campaign.js'
+    dateCard: './src/app/components/date-card/date-card.module.coffee'
   };
 };
