@@ -6,6 +6,7 @@
  */
 module.exports = function(mode) {
   return mode.isTest ? {} : {
-    dateCard: './src/app/components/date-card/date-card.module.coffee'
+    'angular-vendor': ['angular'],
+    'date-card' : './src/app/components/date-card/date-card.module.coffee'
   };
 };

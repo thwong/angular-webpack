@@ -7,6 +7,7 @@ module.exports = function () {
   var config = {};
 
   config.entry = require('./config/entry.js')(mode);
+  config.resolve = require('./config/resolve.js')(mode);
   config.output = require('./config/output.js')(mode);
   config.devtool = require('./config/devtool.js')(mode);
   config.module = require('./config/module.js')(mode);

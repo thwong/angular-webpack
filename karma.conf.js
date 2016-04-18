@@ -1,7 +1,7 @@
-var specs = 'src/**/*.spec.js';
+var specs = 'src/**/*.spec.coffee';
 
 if(process.env.npm_config_module) {
-  specs = 'src/' + process.env.npm_config_module + '/**/*.spec.js';
+  specs = 'src/' + process.env.npm_config_module + '/**/*.spec.coffee';
 }
 
 // Reference: http://karma-runner.github.io/0.12/config/configuration-file.html
@@ -16,11 +16,11 @@ module.exports = function karmaConfig (config) {
     reporters: [
       // Reference: https://github.com/mlex/karma-spec-reporter
       // Set reporter to print detailed results to console
-      'progress',
+      'progress'
 
       // Reference: https://github.com/karma-runner/karma-coverage
       // Output code coverage files
-      'coverage'
+      // 'coverage'
     ],
 
     files: [
@@ -33,8 +33,8 @@ module.exports = function karmaConfig (config) {
       // Reference: http://webpack.github.io/docs/testing.html
       // Reference: https://github.com/webpack/karma-webpack
       // Convert files with webpack and load sourcemaps
-      'src/tests.webpack.js': ['webpack', 'sourcemap'],
-      'src/**/*.spec.js': ['webpack', 'sourcemap']
+      'src/tests.webpack.js': ['webpack'],
+      'src/**/*.spec.coffee': ['webpack']
     },
 
     browsers: [

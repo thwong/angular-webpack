@@ -1,7 +1,5 @@
 'use strict'
 
-require 'angular'
-
 angular.module 'ws', []
 
 angular.module('ws').component 'dateCard', {

@@ -7,6 +7,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CommonsChunkPlugin = require('webpack-vendor-chunk-plugin');
 
 module.exports = function(mode) {
   var plugins = [];
@@ -19,13 +20,17 @@ module.exports = function(mode) {
       new HtmlWebpackPlugin({
         template: './src/public/index.html',
         inject: 'body',
-        chunks: mode.module
+        chunks: mode.module,
+        chunksSortMode: 'dependency'
       }),
 
       // Reference: https://github.com/webpack/extract-text-webpack-plugin
       // Extract css files
       // Disabled when in test mode or not in build mode
-      new ExtractTextPlugin('[name].[hash].css', {disable: !mode.isProd})
+      new ExtractTextPlugin('[name].[hash].css', {disable: !mode.isProd}),
+
+      // Add in the Common Chunk Vendor Plugin
+      new webpack.optimize.CommonsChunkPlugin('angular-vendor', 'angular-vendor.js')
     )
   }
 
