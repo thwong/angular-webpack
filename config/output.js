@@ -13,7 +13,7 @@ module.exports = function(mode) {
 
     // Output path from the view of the page
     // Uses webpack-dev-server in development
-    publicPath: mode.isProd ? '/' : 'http://localhost:8080/',
+    publicPath: mode.isProd ? '/' : 'http://localhost:3000/',
 
     // Filename for entry points
     // Only adds hash in build mode

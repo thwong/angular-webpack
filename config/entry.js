@@ -8,7 +8,8 @@ module.exports = function(mode) {
   return mode.isTest ? {} : {
     'vendor': [
       'angular', 
-      'angular-ui-router'
+      'angular-ui-router',
+      'ramda'
     ],
     // 'date-card' : './src/app/components/date-card/date-card.module.coffee',
     'campaign-app': './src/app/pages/campaign/campaign.app.coffee'

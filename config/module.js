@@ -27,5 +27,6 @@ module.exports = function(mode) {
   }
   // Do not parse minified angular.js file
   module.noParse.push(path.resolve(nodeModules, 'angular/angular.min.js'));
+  module.noParse.push(path.resolve(nodeModules, 'ramda/dist/ramda.min.js'));
   return module;
 }
