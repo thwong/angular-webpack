@@ -1,5 +1,8 @@
-console.log 'loaded campaign.app.coffee'
-
-require '../../app.module.coffee'
-require './campaign.module.coffee'
-require './campaign.route.coffee'
+'use strict'
+angular.module 'ws.campaign', [
+  require 'angular-ui-router'
+]
+.config ($stateProvider) ->
+    # Define the mapping for each map
+    $stateProvider
+      .state 'landing', require './landing/campaign.landing.module.coffee'

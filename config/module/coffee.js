@@ -2,6 +2,6 @@
 module.exports = function() {
   return {
     test: /\.coffee$/,
-    loader: 'coffee-loader'
+    loaders: ['ng-annotate', 'coffee-loader']
   };
 };

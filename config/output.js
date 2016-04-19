@@ -4,10 +4,12 @@
  * Should be an empty object if it's generating a test build
  * Karma will handle setting it up for you when it's a test build
  */
+var path = require('path');
+
 module.exports = function(mode) {
   return mode.isTest ? {} : {
     // Absolute output directory
-    path: __dirname + '/dist',
+    path: path.resolve(__dirname, '../dist'),
 
     // Output path from the view of the page
     // Uses webpack-dev-server in development
