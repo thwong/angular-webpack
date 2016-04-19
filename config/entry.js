@@ -6,7 +6,8 @@
  */
 module.exports = function(mode) {
   return mode.isTest ? {} : {
-    'angular-vendor': ['angular'],
-    'date-card' : './src/app/components/date-card/date-card.module.coffee'
+    'angular-vendor': ['angular', 'angular-ui-router'],
+    // 'date-card' : './src/app/components/date-card/date-card.module.coffee',
+    'campaign-app': './src/app/pages/campaign/campaign.app.coffee'
   };
 };
