@@ -22,7 +22,7 @@ module.exports = function(mode) {
         inject: 'body',
         chunks: mode.module,
         chunksSortMode: 'dependency',
-        filename: 'campaign.html'
+        filename: mode.isProd ? 'campaign.html' : 'index.html'
       }),
 
       // Reference: https://github.com/webpack/extract-text-webpack-plugin

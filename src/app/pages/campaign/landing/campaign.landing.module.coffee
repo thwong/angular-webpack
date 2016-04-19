@@ -1,7 +1,11 @@
 angular.module 'ws.campaign.landing', []
 
+path = require 'path'
+
+landingTemplate = require '../../../templates/landing/templates.landing.module.coffee'
+
 module.exports =
   url: ''
-  template: require './campaign.landing.ng.html'
-  controller: require './campaign.landing.controller.coffee'
-  controllerAs: 'campaignLanding'
+  template: landingTemplate.template
+  controller: landingTemplate.controller
+  controllerAs: landingTemplate.controllerAs
