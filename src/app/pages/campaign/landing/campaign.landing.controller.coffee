@@ -1,9 +1,6 @@
 'use strict'
 
-module.exports = angular.module('ws.campaign.landing')
-  .controller 'CampaignLandingController', (
-
-  ) ->
+module.exports = ->
 
     campaignLanding = @
 

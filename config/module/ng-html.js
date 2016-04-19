@@ -5,6 +5,6 @@
 module.exports = function(mode) {
   return {
     test: /\.ng\.html$/,
-    loader: 'ngTemplate!html'
+    loader: 'html'
   };
 }
