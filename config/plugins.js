@@ -8,7 +8,6 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CommonsChunkPlugin = require('webpack-vendor-chunk-plugin');
-var AnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 module.exports = function(mode) {
   var plugins = [];
@@ -22,16 +21,17 @@ module.exports = function(mode) {
         template: './src/app/pages/campaign/campaign.app.html',
         inject: 'body',
         chunks: mode.module,
-        chunksSortMode: 'dependency'
+        chunksSortMode: 'dependency',
+        filename: 'campaign.html'
       }),
 
       // Reference: https://github.com/webpack/extract-text-webpack-plugin
       // Extract css files
       // Disabled when in test mode or not in build mode
-      // new ExtractTextPlugin('[name].[hash].css', {disable: !mode.isProd}),
+      new ExtractTextPlugin('[name].[chunkhash].css', {disable: !mode.isProd}),
 
       // Add in the Common Chunk Vendor Plugin
-      new webpack.optimize.CommonsChunkPlugin('angular-vendor', 'angular-vendor.js')
+      new webpack.optimize.CommonsChunkPlugin('vendor', mode.isProd ? 'vendor.[chunkhash].js' : 'vendor.js')
     )
   }
 
@@ -40,17 +40,17 @@ module.exports = function(mode) {
     plugins.push(
       // Reference: http://webpack.github.io/docs/list-of-plugins.html#noerrorsplugin
       // Only emit files when there are no errors
-      // new webpack.NoErrorsPlugin(),
+      new webpack.NoErrorsPlugin(),
 
       // Reference: http://webpack.github.io/docs/list-of-plugins.html#dedupeplugin
       // Dedupe modules in the output
-      // new webpack.optimize.DedupePlugin(),
-
-      // new AnnotatePlugin({ add: true }),
+      new webpack.optimize.DedupePlugin(),
 
       // Reference: http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
       // Minify all javascript, switch loaders to minimizing mode
-      //new webpack.optimize.UglifyJsPlugin(),
+      new webpack.optimize.UglifyJsPlugin({
+        exclude: /vendor*/
+      })
 
       // Copy assets from the public folder
       // Reference: https://github.com/kevlened/copy-webpack-plugin

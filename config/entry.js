@@ -6,7 +6,10 @@
  */
 module.exports = function(mode) {
   return mode.isTest ? {} : {
-    'angular-vendor': ['angular', 'angular-ui-router'],
+    'vendor': [
+      'angular', 
+      'angular-ui-router'
+    ],
     // 'date-card' : './src/app/components/date-card/date-card.module.coffee',
     'campaign-app': './src/app/pages/campaign/campaign.app.coffee'
   };

@@ -9,7 +9,7 @@ var path = require('path');
 module.exports = function(mode) {
   return mode.isTest ? {} : {
     // Absolute output directory
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, '../dist/'),
 
     // Output path from the view of the page
     // Uses webpack-dev-server in development
@@ -17,10 +17,10 @@ module.exports = function(mode) {
 
     // Filename for entry points
     // Only adds hash in build mode
-    filename: mode.isProd ? '[name].[hash].js' : '[name].bundle.js',
+    filename: mode.isProd ? '[name].[chunkhash].js' : '[name].bundle.js',
 
     // Filename for non-entry points
     // Only adds hash in build mode
-    chunkFilename: mode.isProd ? '[name].[hash].js' : '[name].bundle.js'
+    chunkFilename: mode.isProd ? '[name].[chunkhash].js' : '[name].bundle.js'
   };
 };
