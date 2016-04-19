@@ -7,6 +7,9 @@
 module.exports = function(mode) {
   return {
     contentBase: './src/public',
-    stats: 'minimal'
+    stats: 'minimal',
+    proxy: {
+      "/_ah/*" : "http://localhost:8080"
+    }
   };
 };

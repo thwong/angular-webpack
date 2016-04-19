@@ -1,0 +1,208 @@
+{
+  "list_campaigns": {
+ "my_campaigns": {
+  "count": "3",
+  "items": [
+   {
+    "collaborators": [
+     {
+      "email_id": "yogesh@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgMzMxMGRlODBhMzY2NDM3Mjk2OWQ0MDE0ZmVhNzk4NmUM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/CvSU0DKXCNR3l07ETGO54kBrItJGcwYZY5eHr8T65DyYuGkS9XWx3IlXZqxlq-wo0siTFRUNuI52r23jIaDhNtEA5Q",
+      "person_name": "Yogesh M",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "sandeep@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgODg3NDIzZTNiYTRhNGRhNzg2MmFmNTMyZDA3YzI1OGMM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/8cu4_wYx84sTkfrZkfMY8iyrIxwBbYLFCkbNTvR7k7N0d3oecbWs7ASub09dgknI44TAAW5bltyZDntKiMwPjPJ4",
+      "person_name": "Sandeep M",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "tejashree@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgNmYwMjIzMDdjMjk4NGY4ZmE5NTFhNWI5YmNkNWU0ZjQM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/_K0eqPvb1Xa9eNEUmXo9Wzu4iplYB44FhRlpl-Q8OVTH57CqZdlry1LWgTA7Okqcnq8A_maRljwE92V-I0qWzWUrXA",
+      "person_name": "Tejashree D",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "clark@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgZDU4MjVhZWI1NTM0NDYwOTg0YWE4ZjNhYjQ3MmQ5N2MM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/NJ2fFRxU5f7waQxo4TJrJ3yQUAu56R14bby5i-vA-B425DeAETnvz27ORcdACeiLe8kfKmbee4APqZpqm4V3Vep2AQ",
+      "person_name": "Clark F",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "asheesh@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgMWM4YzUzMGQ5MjM2NGNmNDhmYmJhMDQ4NzNjMTEwNTIM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/6VR25lrlrGyjVJSazXcIHzhLUqua58Zn1pbzqgEqXxRYqs9DRImoLNXd_CHs3U25UzhXNkCyrlRWtoIckGAUuWm7",
+      "person_name": "Asheesh C",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "amit@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgNmNkNGI1NzMxZTE1NDkzYzk1ZWU5Y2NjNTAyYjQwZTAM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/V_UbFqx0Zng3Pi6N-e-otWvS6_jht4QUd1ze2eCMr2grG8BCqnPGKGlMTrxkWV5UQCHi1waKmgWHC78T9djQAo1T",
+      "person_name": "Amit S",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "milind@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgOGMyZWNmZDdkNzRhNGE2NDg3YzY4MmRkNWUxMTg1ZGMM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/hxkC6nsUwphff9TrYuuU6lcW-k5BK6IAmHL2CUrtXzWimPbWdX7T4JR1KG8gSS0JZcZmonz6Z0c5FJyjw0QYRV0W7A",
+      "person_name": "Milind J",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "mayank@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgMTNkZDA1YTQ0MzZmNDE4ZWJjODZkMjI0NjY0NzdiMTMM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/k_l8PvlBzja0SxElqcpRYKeyL5F4nf78lz5idUYfvgiv1OrjpSZ0zpPWtyaOQKVXfTKb-byIab1R1NUGoLneWPnJPcJPcQ",
+      "person_name": "Mayank B",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "tim@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgYzIzMmFlYWE2MDA5NGZkZThiOGM3ZDU2NWQxOWI4ODcM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/YhtCi9ujXPb738phLDkbMr8uqmVy8Qm8G5NZbXaVSYQdRQS_fEnn1OP4D1c8W1-u_f8bFscWS2RS4kjYjD7q3i3zoktf698",
+      "person_name": "Tim W",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "benjamin@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgNzMzMGFmMTVmNGRkNDZjNmI0MGM3ODcyNGZkMGU3OGMM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/8cEgRFQGmWSZiuHfzKxh7TEuzJP_-_qGxpX3RxhnDCBx10dOyTHuTHizKfTs1caRx9ZUWVigGwL50pDsdrdtplaT",
+      "person_name": "Benjamin T",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "nishant@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgZjg5Mjc2OWY0MjgxNGM2ZDlmNjJkY2E3OGY1ZWRlYzcM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/enVBw1DrxHJSaL_zXO6IBm19WQV6KZBKsY0APsgjrfdzs1rYtaWItQMSEw_KOdV4feuSaDXmePQ3rPtSwoikoJAa",
+      "person_name": "Nishant D",
+      "company_name": "WorkSpan"
+     }
+    ],
+    "name": "1_ For WSP-693",
+    "end_date": "2015-12-31",
+    "star_thread_id": "WS-Toggle_ahJzfndvcmtzcGFuLXFhLTEyMTVyEwsSBlRvZ2dsZRiAgICAr-GZCww",
+    "companies": [
+     {
+      "logo_url": "https://www.filepicker.io/api/file/sYJBKMlXSLudWcZfgNSK?policy=eyJoYW5kbGUiOiAic1lKQktNbFhTTHVkV2NaZmdOU0siLCAiY2FsbCI6IFsicmVhZCJdLCAiZXhwaXJ5IjogMzMwMTc0MDUxMTF9&signature=958fa36c936dd2a8b525dbb71881ba1cb28c48cc66b0209a9991f5e19fc4e11e",
+      "email_domain": "@workspan.com",
+      "company_id": "WS-Company_ahJzfndvcmtzcGFuLXFhLTEyMTVyFAsSB0NvbXBhbnkYgICAgO2tmgkM",
+      "company_name": "WorkSpan"
+     }
+    ],
+    "campaign_id": "WS-Campaign_ahJzfndvcmtzcGFuLXFhLTEyMTVyLgsSCENhbXBhaWduIiAxZjg4NWNhNTc2Mzk0M2I2YjQzZjgxM2IxZTdlMzdiZgw",
+    "intent": "Impact Revenue",
+    "is_starred": false,
+    "start_date": "2015-12-01",
+    "stage": "propose"
+   },
+   {
+    "collaborators": [
+     {
+      "email_id": "tim@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgYzIzMmFlYWE2MDA5NGZkZThiOGM3ZDU2NWQxOWI4ODcM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/YhtCi9ujXPb738phLDkbMr8uqmVy8Qm8G5NZbXaVSYQdRQS_fEnn1OP4D1c8W1-u_f8bFscWS2RS4kjYjD7q3i3zoktf698",
+      "person_name": "Tim W",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "nishant@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgZjg5Mjc2OWY0MjgxNGM2ZDlmNjJkY2E3OGY1ZWRlYzcM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/enVBw1DrxHJSaL_zXO6IBm19WQV6KZBKsY0APsgjrfdzs1rYtaWItQMSEw_KOdV4feuSaDXmePQ3rPtSwoikoJAa",
+      "person_name": "Nishant D",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "admin@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgMmQ2ODVlZjBmZTVlNGM4MzkyYjkyZmI4ZTE0YWQzYmMM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/KHZd8rv22fh5wJiGQ1rU-c4TMd352GNAOwbylUsGa3fPA5UR_oBPnzGZWjVs9MCWt12ovPthyp8Kzts5eXeTUgMX6AJe",
+      "person_name": "Admin U",
+      "company_name": "WorkSpan"
+     }
+    ],
+    "name": "Tim Test Campaign",
+    "end_date": "2015-12-31",
+    "star_thread_id": "WS-Toggle_ahJzfndvcmtzcGFuLXFhLTEyMTVyEwsSBlRvZ2dsZRiAgICA-YzdCAw",
+    "companies": [
+     {
+      "logo_url": "https://www.filepicker.io/api/file/sYJBKMlXSLudWcZfgNSK?policy=eyJoYW5kbGUiOiAic1lKQktNbFhTTHVkV2NaZmdOU0siLCAiY2FsbCI6IFsicmVhZCJdLCAiZXhwaXJ5IjogMzMwMTc0MDUxMTF9&signature=958fa36c936dd2a8b525dbb71881ba1cb28c48cc66b0209a9991f5e19fc4e11e",
+      "email_domain": "@workspan.com",
+      "company_id": "WS-Company_ahJzfndvcmtzcGFuLXFhLTEyMTVyFAsSB0NvbXBhbnkYgICAgO2tmgkM",
+      "company_name": "WorkSpan"
+     }
+    ],
+    "campaign_id": "WS-Campaign_ahJzfndvcmtzcGFuLXFhLTEyMTVyLgsSCENhbXBhaWduIiA3ODVmOTRkMjMzYzQ0YTg4YWNjNzliMDk2MDlmNTkwMAw",
+    "intent": "Impact Revenue",
+    "qualitative_goal": "Test AAA",
+    "is_starred": true,
+    "start_date": "2015-12-22",
+    "stage": "done"
+   },
+   {
+    "collaborators": [
+     {
+      "email_id": "tim@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgYzIzMmFlYWE2MDA5NGZkZThiOGM3ZDU2NWQxOWI4ODcM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/YhtCi9ujXPb738phLDkbMr8uqmVy8Qm8G5NZbXaVSYQdRQS_fEnn1OP4D1c8W1-u_f8bFscWS2RS4kjYjD7q3i3zoktf698",
+      "person_name": "Tim W",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "clark@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgZDU4MjVhZWI1NTM0NDYwOTg0YWE4ZjNhYjQ3MmQ5N2MM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/NJ2fFRxU5f7waQxo4TJrJ3yQUAu56R14bby5i-vA-B425DeAETnvz27ORcdACeiLe8kfKmbee4APqZpqm4V3Vep2AQ",
+      "person_name": "Clark F",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "nishant@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgZjg5Mjc2OWY0MjgxNGM2ZDlmNjJkY2E3OGY1ZWRlYzcM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/enVBw1DrxHJSaL_zXO6IBm19WQV6KZBKsY0APsgjrfdzs1rYtaWItQMSEw_KOdV4feuSaDXmePQ3rPtSwoikoJAa",
+      "person_name": "Nishant D",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "vivek@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgNzU4YzJjOGMzNWY5NDM0Yzg0MjdmYjM1MjY3OWNhYzYM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/H8U8DYI3aV8hAbI0c7x6cAhiSDURvlPp47uMaZJkGCf25yZBtkGKVk5UyiJpPOkkwtPdmTdoM6v4skl_kLnioIgaUw",
+      "person_name": "Vivek T",
+      "company_name": "WorkSpan"
+     },
+     {
+      "email_id": "sandeep@workspan.com",
+      "person_id": "WS-Person_ahJzfndvcmtzcGFuLXFhLTEyMTVyLAsSBlBlcnNvbiIgODg3NDIzZTNiYTRhNGRhNzg2MmFmNTMyZDA3YzI1OGMM_0",
+      "profile_pic_url": "http://lh3.googleusercontent.com/8cu4_wYx84sTkfrZkfMY8iyrIxwBbYLFCkbNTvR7k7N0d3oecbWs7ASub09dgknI44TAAW5bltyZDntKiMwPjPJ4",
+      "person_name": "Sandeep M",
+      "company_name": "WorkSpan"
+     }
+    ],
+    "name": "Repro Goals bug",
+    "end_date": "2016-01-15",
+    "star_thread_id": "WS-Toggle_ahJzfndvcmtzcGFuLXFhLTEyMTVyEwsSBlRvZ2dsZRiAgICApu_OCgw",
+    "companies": [
+     {
+      "logo_url": "https://www.filepicker.io/api/file/sYJBKMlXSLudWcZfgNSK?policy=eyJoYW5kbGUiOiAic1lKQktNbFhTTHVkV2NaZmdOU0siLCAiY2FsbCI6IFsicmVhZCJdLCAiZXhwaXJ5IjogMzMwMTc0MDUxMTF9&signature=958fa36c936dd2a8b525dbb71881ba1cb28c48cc66b0209a9991f5e19fc4e11e",
+      "email_domain": "@workspan.com",
+      "company_id": "WS-Company_ahJzfndvcmtzcGFuLXFhLTEyMTVyFAsSB0NvbXBhbnkYgICAgO2tmgkM",
+      "company_name": "WorkSpan"
+     }
+    ],
+    "campaign_id": "WS-Campaign_ahJzfndvcmtzcGFuLXFhLTEyMTVyLgsSCENhbXBhaWduIiBjNGVkYWU1OGNlNmU0ZmM1ODdlZjZhOTZmOGUzMTQ3Nww",
+    "intent": "Influence Pipeline",
+    "qualitative_goal": "replicate a bug invloving the goals button",
+    "is_starred": false,
+    "start_date": "2016-01-13",
+    "stage": "propose"
+   }
+  ],
+  "next_page_token": "CmkKHQoQYWJvdXQuc3RhcnRfZGF0ZRIJCIDAr8-9pcoCEkRqEnN-d29ya3NwYW4tcWEtMTIxNXIuCxIIQ2FtcGFpZ24iIGM0ZWRhZTU4Y2U2ZTRmYzU4N2VmNmE5NmY4ZTMxNDc3DBgAIAA="
+ },
+ "kind": "marketing_campaign#campaignItem",
+ "etag": "\"G-bG2QlxdSSwzQTg3EFNK7iAFpU/tAoQMPPHKp8qj8LUtsBWmTvEFGs\""
+}
+
+}

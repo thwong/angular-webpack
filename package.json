@@ -7,7 +7,8 @@
     "server": "webpack-dev-server --history-api-fallback --inline --progress --port 3000",
     "test": "karma start",
     "test-watch": "karma start --auto-watch --no-single-run",
-    "start": "npm run server"
+    "start": "npm run server",
+    "mock-api": "json-server --watch src/mock/data.json --port 8080 --routes src/mock/routes.json"
   },
   "repository": {
     "type": "git",
