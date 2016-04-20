@@ -6,4 +6,4 @@ angular.module 'ws.campaign', [
 .config ($stateProvider) ->
     # Define the mapping for each map and requir
     $stateProvider
-      .state 'landing', require './landing/campaign.landing.module.coffee'
+      .state 'landing', require('./landing/campaign.landing.module.coffee')
