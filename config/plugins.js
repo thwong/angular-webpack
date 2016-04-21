@@ -18,10 +18,11 @@ module.exports = function(mode) {
     // Reference: https://github.com/ampedandwired/html-webpack-plugin
     // Render index.html`
     plugins.push(
+
       new HtmlWebpackPlugin({
         template: './src/app/pages/campaign/campaign.app.html',
         inject: 'body',
-        chunks: mode.module,
+        chunks: ['vendor', 'campaign-app'],
         chunksSortMode: 'dependency',
         filename: 'campaign.html'
       }),
@@ -29,7 +30,7 @@ module.exports = function(mode) {
       new HtmlWebpackPlugin({
         template: './src/app/pages/plan/plan.app.html',
         inject: 'body',
-        chunks: mode.module,
+        chunks: ['vendor', 'plan-app'],
         chunksSortMode: 'dependency',
         filename: 'plan.html'
       }),

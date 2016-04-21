@@ -8,6 +8,7 @@
     "test": "karma start",
     "test-watch": "karma start --auto-watch --no-single-run",
     "start": "npm run server",
+    "dist": "http-server dist -p 9000",
     "mock-api": "json-server --watch src/mock/data.json --port 8080 --routes src/mock/routes.json"
   },
   "repository": {
