@@ -2,9 +2,11 @@ landingTemplate = require '../../../templates/landing/templates.landing.module.c
 campaignLandingFactory = require './campaign.landing.factory.coffee'
 
 module.exports =
-  angular.extend landingTemplate, {
-    url: ''
-    resolve:
-      title: -> 'Hello World Campaign Landing'
-      factory: -> campaignLandingFactory
-  }
+  url: ''
+  resolve:
+    factory: (CampaignLandingFactory) ->
+      'ngInject'
+      CampaignLandingFactory
+  template: landingTemplate.template
+  controller: landingTemplate.controller
+  controllerAs: landingTemplate.controllerAs
