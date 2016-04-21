@@ -12,6 +12,7 @@ module.exports = function(mode) {
       'ramda'
     ],
     // 'date-card' : './src/app/components/date-card/date-card.module.coffee',
-    'campaign-app': './src/app/pages/campaign/campaign.app.coffee'
+    'campaign-app': './src/app/pages/campaign/campaign.app.coffee',
+    'plan-app': './src/app/pages/plan/plan.app.coffee'
   };
 };

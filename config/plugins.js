@@ -26,6 +26,14 @@ module.exports = function(mode) {
         filename: 'campaign.html'
       }),
 
+      new HtmlWebpackPlugin({
+        template: './src/app/pages/plan/plan.app.html',
+        inject: 'body',
+        chunks: mode.module,
+        chunksSortMode: 'dependency',
+        filename: 'plan.html'
+      }),
+
       // Reference: https://github.com/webpack/extract-text-webpack-plugin
       // Extract css files
       // Disabled when in test mode or not in build mode
