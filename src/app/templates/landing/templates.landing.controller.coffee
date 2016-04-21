@@ -6,3 +6,5 @@ module.exports = ($scope, factory) ->
   landing = @
   landing.moduleName = 'TemplateLandingController'
   landing.myList = factory.myList
+
+  landing
