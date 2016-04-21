@@ -3,6 +3,7 @@
  * Reference: http://webpack.github.io/docs/configuration.html#plugins
  * List: http://webpack.github.io/docs/list-of-plugins.html
  */
+var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -22,7 +23,7 @@ module.exports = function(mode) {
         inject: 'body',
         chunks: mode.module,
         chunksSortMode: 'dependency',
-        filename: mode.isProd ? 'campaign.html' : 'index.html'
+        filename: 'campaign.html'
       }),
 
       // Reference: https://github.com/webpack/extract-text-webpack-plugin
@@ -50,13 +51,13 @@ module.exports = function(mode) {
       // Minify all javascript, switch loaders to minimizing mode
       new webpack.optimize.UglifyJsPlugin({
         exclude: /vendor*/
-      })
+      }),
 
       // Copy assets from the public folder
       // Reference: https://github.com/kevlened/copy-webpack-plugin
-      // new CopyWebpackPlugin([{
-      //   from: __dirname + '/src/public'
-      // }])
+      new CopyWebpackPlugin([{
+        from: path.resolve(__dirname, '../src/public/')
+      }])
     )
   }
 
