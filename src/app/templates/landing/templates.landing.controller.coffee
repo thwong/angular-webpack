@@ -1,9 +1,8 @@
 'use strict'
 
-module.exports = ($scope, title) ->
+module.exports = ($scope, factory) ->
   'ngInject'
-
-  console.log title
 
   landing = @
   landing.moduleName = 'TemplateLandingController'
+  landing.myList = factory.myList
