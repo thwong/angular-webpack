@@ -1,6 +1,10 @@
-describe 'component: date-card', ->
+chai = require 'chai'
+chai.should()
 
-  beforeEach angular.mock.module 'ws'
+DateCard = require './date-card.model.coffee'
 
-  it 'should have ran this test', ->
-    expect(true).toBe true
+describe 'Date Card', ->
+  it 'should have a name', ->
+    dateCard = new DateCard 'card1'
+    dateCard.name.should.equal 'card1'
+  
