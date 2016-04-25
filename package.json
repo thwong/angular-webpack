@@ -26,6 +26,8 @@
   },
   "devDependencies": {
     "angular-mocks": "^1.5.0",
+    "angular-translate": "^2.11.0",
+    "angular-translate-loader-partial": "^2.11.0",
     "angular-ui-router": "^0.2.18",
     "autoprefixer": "^6.0.3",
     "babel-core": "^6.2.1",

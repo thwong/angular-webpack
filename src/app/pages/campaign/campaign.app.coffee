@@ -2,13 +2,9 @@
 
 angular.module 'ws.campaign', [
   require 'angular-ui-router'
+  require 'angular-translate'
+  require 'angular-translate-loader-partial'
 ]
 
-CampaignLandingModule = require './landing/campaign.landing.module.coffee'
-
-angular.module 'ws.campaign'
-.config ($stateProvider) ->
-    'ngInject'
-    
-    $stateProvider
-      .state 'landing', CampaignLandingModule
+require './campaign.translation.coffee'
+require './campaign.route.coffee'

@@ -9,6 +9,8 @@ module.exports = function(mode) {
     'vendor': [
       'angular', 
       'angular-ui-router',
+      'angular-translate',
+      'angular-translate-loader-partial',
       'ramda'
     ],
     // 'date-card' : './src/app/components/date-card/date-card.module.coffee',
