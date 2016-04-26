@@ -7,14 +7,13 @@
 module.exports = function(mode) {
   return mode.isTest ? {} : {
     'vendor': [
-      'angular', 
+      'angular',            // Angular framework file
       'angular-ui-router',
-      'angular-translate',
-      'angular-translate-loader-partial',
+      'angular-translate',  // Provide language translation capabilities
+      'angular-sanitize',   // Required for angular-translation sanitize security setting
       'ramda'
     ],
-    // 'date-card' : './src/app/components/date-card/date-card.module.coffee',
-    'campaign-app': './src/app/pages/campaign/campaign.app.coffee',
-    'plan-app': './src/app/pages/plan/plan.app.coffee'
+    'campaign-app': './src/app/applications/campaign/campaign.app.coffee',
+    'plan-app': './src/app/applications/plan/plan.app.coffee'
   };
 };

@@ -1,7 +1,7 @@
 // CoffeeScript loader
 module.exports = function() {
   return {
-    test: /\.lang\.json/,
+    test: /\.translation\.json/,
     loaders: ['json-loader']
   };
 };

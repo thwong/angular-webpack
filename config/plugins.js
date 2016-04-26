@@ -20,7 +20,7 @@ module.exports = function(mode) {
     plugins.push(
 
       new HtmlWebpackPlugin({
-        template: './src/app/pages/campaign/campaign.app.html',
+        template: './src/app/applications/campaign/campaign.app.html',
         inject: 'body',
         chunks: ['vendor', 'campaign-app'],
         chunksSortMode: 'dependency',
@@ -28,7 +28,7 @@ module.exports = function(mode) {
       }),
 
       new HtmlWebpackPlugin({
-        template: './src/app/pages/plan/plan.app.html',
+        template: './src/app/applications/plan/plan.app.html',
         inject: 'body',
         chunks: ['vendor', 'plan-app'],
         chunksSortMode: 'dependency',
