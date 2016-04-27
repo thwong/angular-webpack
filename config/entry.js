@@ -7,10 +7,10 @@
 module.exports = function(mode) {
   return mode.isTest ? {} : {
     'vendor': [
-      'angular',            // Angular framework file
-      'angular-ui-router',
-      'angular-translate',  // Provide language translation capabilities
-      'angular-sanitize',   // Required for angular-translation sanitize security setting
+      'angular',                  // Angular.js
+      'angular-component-router', // Angular Component Router  
+      'angular-translate',        // Provide language translation capabilities
+      'angular-sanitize',         // Required for angular-translation sanitize security setting
       'ramda'
     ],
     'campaign-app': './src/app/applications/campaign/campaign.app.coffee',

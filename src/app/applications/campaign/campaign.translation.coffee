@@ -4,6 +4,7 @@
 GlobalLanguage = require '../global.translation.json'
 
 angular.module 'ws.campaign'
+
 .config ($translateProvider) ->
   'ngInject'
 
