@@ -10,6 +10,12 @@ module.exports = function(mode) {
     stats: 'minimal',
     proxy: {
       "/_ah/*" : "http://localhost:8080"
+    },
+    historyApiFallback: {
+      index: 'index.html',
+      rewrites: [
+        { from: /\/campaign/, to: '/campaign/index.html' }
+      ]
     }
   };
 };

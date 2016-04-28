@@ -17,7 +17,7 @@ angular.module MODULE_NAME
     template: '<ng-outlet></ng-outlet>'
     $routeConfig: [
       { path: '/', name: 'TestLanding', component: 'testLanding' }
-      { path: '/campaign/detail', name: 'TestDetail', component: 'testLanding' }
+      { path: '/detail', name: 'TestDetail', component: 'testDetail' }
     ]
 
 module.exports =
