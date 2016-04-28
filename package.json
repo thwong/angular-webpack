@@ -8,7 +8,7 @@
     "test": "karma start",
     "test-watch": "karma start --auto-watch --no-single-run",
     "start": "npm run server",
-    "dist": "http-server dist -p 9000",
+    "dist": "ws",
     "mock-api": "json-server --watch src/mock/data.json --port 8080 --routes src/mock/routes.json"
   },
   "repository": {
@@ -68,6 +68,7 @@
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1",
-    "webpack-vendor-chunk-plugin": "^1.0.0"
+    "webpack-vendor-chunk-plugin": "^1.0.0",
+    "ws": "^1.1.0"
   }
 }

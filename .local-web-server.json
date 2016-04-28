@@ -1,0 +1,7 @@
+{
+  "port": 9000,
+  "directory": "dist",
+  "rewrite": [
+    { "from": "/campaign/*", "to": "/campaign/index.html" }
+  ]
+}
