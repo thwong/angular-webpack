@@ -1,12 +1,10 @@
 'use strict'
 
-TEMPLATE_NAME = 'landing'
-MODULE_NAME = "ws.templates.#{TEMPLATE_NAME}"
+TEMPLATE    = require './templates.landing.ng.html'
+MODULE_NAME = 'ws.templates.landing'
 
 angular.module MODULE_NAME, []
 
 module.exports =
   name: MODULE_NAME
-  template: require './templates.landing.ng.html'
-  controller: require './templates.landing.controller.coffee'
-  controllerAs: TEMPLATE_NAME
+  template: TEMPLATE
