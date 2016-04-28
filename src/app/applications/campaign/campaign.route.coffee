@@ -12,3 +12,6 @@ angular.module MODULE_NAME
       .state 'default',
         url: '/'
         template: 'default template'
+      .state 'detail',
+        url: '/detail'
+        template: 'the detail template'
