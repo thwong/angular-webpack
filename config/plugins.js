@@ -24,7 +24,7 @@ module.exports = function(mode) {
         inject: 'body',
         chunks: ['vendor', 'campaign-app'],
         chunksSortMode: 'dependency',
-        filename: 'index.html'
+        filename: 'campaign/index.html'
       }),
 
       // new HtmlWebpackPlugin({
