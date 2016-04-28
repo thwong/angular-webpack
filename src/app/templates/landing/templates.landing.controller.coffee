@@ -1,17 +1,12 @@
 'use strict'
 
-CONTROLLER_NAME = 'TemplateLandingController'
+TemplateLandingController = (
+  TemplateLandingFactory
+) ->
+  'ngInject'
+  console.log 'template landing controller', TemplateLandingFactory
+  @language = TemplateLandingFactory.language
 
-angular.module 'ws.templates.landing'
-  .controller CONTROLLER_NAME, (
-    $scope
-    factory
-  ) ->
-    'ngInject'
+  return
 
-    landing = @
-    landing.myList = factory.myList
-
-    landing
-
-module.exports = CONTROLLER_NAME
+module.exports = TemplateLandingController

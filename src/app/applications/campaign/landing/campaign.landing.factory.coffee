@@ -1,10 +1,14 @@
-angular.module 'ws.campaign'
-  .factory 'CampaignLandingFactory', (
-    
-  ) ->
+'use strict'
 
-    factory = {}
+R = require 'ramda'
+MODULE = require './campaign.landing.module.coffee'
+TEMPLATE_LANDING_INTERFACE = require '../../../templates/landing/templates.landing.interface.coffee'
 
-    factory.myList = [1..4]
+angular.module MODULE.name
+  .factory 'TemplateLandingFactory', (
+      $translate
+    ) ->
+
+    factory = R.clone TEMPLATE_LANDING_INTERFACE
 
     factory
