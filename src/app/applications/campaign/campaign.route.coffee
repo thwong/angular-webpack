@@ -1,14 +1,14 @@
 'use strict'
 
-TemplateApplicationFrame = require '../../templates/application-frame/templates.application-frame.component.coffee'
+MODULE_NAME = require './campaign.app.module.coffee'
 
-angular.module('ws.campaign')
-  .requires.push TemplateApplicationFrame.module
-
-angular.module 'ws.campaign'
-  # Enable the HTML5 clean URL support
-  .config ($locationProvider) ->
+angular.module MODULE_NAME
+  .config ($stateProvider, $locationProvider) ->
     'ngInject'
+
     $locationProvider.html5Mode true
-  # Define the entry point for the campaign app application
-  .value '$routerRootComponent', TemplateApplicationFrame.component
+
+    $stateProvider
+      .state 'default',
+        url: '/'
+        template: 'default template'

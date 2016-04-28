@@ -8,10 +8,10 @@ module.exports = function(mode) {
   return mode.isTest ? {} : {
     'vendor': [
       'angular',                  // Angular.js
-      'angular-component-router', // Angular Component Router  
+      'angular-ui-router',        // Angular Component Router  
       'angular-translate',        // Provide language translation capabilities
       'angular-sanitize',         // Required for angular-translation sanitize security setting
-      'ramda'
+      'ramda'                     // Ramda library
     ],
     'campaign-app': './src/app/applications/campaign/campaign.app.coffee',
     'plan-app': './src/app/applications/plan/plan.app.coffee'
