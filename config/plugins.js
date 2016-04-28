@@ -24,7 +24,7 @@ module.exports = function(mode) {
         inject: 'body',
         chunks: ['vendor', 'campaign-app'],
         chunksSortMode: 'dependency',
-        filename: 'campaign.html'
+        filename: 'campaign/index.html'
       }),
 
       new HtmlWebpackPlugin({
@@ -32,7 +32,7 @@ module.exports = function(mode) {
         inject: 'body',
         chunks: ['vendor', 'plan-app'],
         chunksSortMode: 'dependency',
-        filename: 'plan.html'
+        filename: 'plan/index.html'
       }),
 
       // Reference: https://github.com/webpack/extract-text-webpack-plugin
