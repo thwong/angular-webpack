@@ -1,6 +1,7 @@
 'use strict'
 
 MODULE_NAME = require './templates.application-frame.module.coffee'
+CONTROLLER = require './templates.application-frame.controller.coffee'
 COMPONENT_NAME = 'templateApplicationFrame'
 
 angular.module MODULE_NAME
@@ -15,6 +16,7 @@ angular.module MODULE_NAME
 angular.module MODULE_NAME
   .component COMPONENT_NAME,
     template: '<ng-outlet></ng-outlet>'
+    controller: CONTROLLER
     $routeConfig: [
       { path: '/', name: 'TestLanding', component: 'testLanding' }
       { path: '/detail', name: 'TestDetail', component: 'testDetail' }
