@@ -1,10 +1,5 @@
 'use strict'
 
-angular.module 'ws.campaign', [
-  'ngComponentRouter'
-  'pascalprecht.translate'
-  'ngSanitize'
-]
-
-require './campaign.translation.coffee'
-require './campaign.route.coffee'
+require './campaign.app.module.coffee'
+require './campaign.app.translation.coffee'
+require './campaign.app.location.coffee'

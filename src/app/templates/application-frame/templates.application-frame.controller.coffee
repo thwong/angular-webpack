@@ -2,8 +2,8 @@
 
 TemplateApplicationFrameController = (
   $q
+  $route
 ) ->
   'ngInject'
-  console.log $q
 
 module.exports = TemplateApplicationFrameController
