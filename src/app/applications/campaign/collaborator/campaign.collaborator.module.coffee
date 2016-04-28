@@ -1,6 +1,6 @@
 'use strict'
 
-MODULE_NAME = 'ws.campaign.landing'
+MODULE_NAME = 'ws.campaign.collaborator'
 
 angular.module MODULE_NAME, []
 
