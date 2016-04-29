@@ -1,4 +1,4 @@
-MODULE          = require './landing-card.module.coffee'
+MODULE          = require '../components.module.coffee'
 TEMPLATE        = require './landing-card.ng.html'
 COMPONENT_NAME  = 'landingCard'
 

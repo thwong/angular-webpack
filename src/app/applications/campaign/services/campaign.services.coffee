@@ -1,4 +1,4 @@
-MODULE = require './campaign.services.module.coffee'
+MODULE       = require '../campaign.app.module.coffee'
 SERVICE_NAME = 'CampaignService'
 
 angular.module MODULE.name

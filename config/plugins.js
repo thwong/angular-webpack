@@ -27,13 +27,13 @@ module.exports = function(mode) {
         filename: 'campaign/index.html'
       }),
 
-      new HtmlWebpackPlugin({
-        template: './src/app/applications/plan/plan.app.html',
-        inject: 'body',
-        chunks: ['vendor', 'plan-app'],
-        chunksSortMode: 'dependency',
-        filename: 'plan/index.html'
-      }),
+      // new HtmlWebpackPlugin({
+      //   template: './src/app/applications/plan/plan.app.html',
+      //   inject: 'body',
+      //   chunks: ['vendor', 'plan-app'],
+      //   chunksSortMode: 'dependency',
+      //   filename: 'plan/index.html'
+      // }),
 
       // Reference: https://github.com/webpack/extract-text-webpack-plugin
       // Extract css files

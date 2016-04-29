@@ -1,13 +1,10 @@
 'use strict'
 
 R                           = require 'ramda'
-MODULE                      = require './campaign.landing.module.coffee'
+MODULE                      = require '../campaign.app.module.coffee'
 TEMPLATE_LANDING_INTERFACE  = require '../../../templates/landing/templates.landing.interface.coffee'
 LANDING_TRANSLATION         = require './campaign.landing.translation.json'
-CAMPAIGN_SERVICE_MODULE     = require '../services/campaign.services.module.coffee'
 CAMPAGIN_SERVICE            = require '../services/campaign.services.coffee'
-
-angular.module(MODULE.name).requires.push CAMPAIGN_SERVICE_MODULE.name
 
 angular.module MODULE.name
   .config ($translateProvider) ->
