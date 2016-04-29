@@ -8,5 +8,4 @@ angular.module MODULE_NAME, [
   'ngSanitize'
 ]
 
-module.exports =
-  name: MODULE_NAME
+module.exports = name: MODULE_NAME
