@@ -1,6 +1,6 @@
 'use strict'
 
-MODULE_NAME   = 'ws.templates.landing'
+MODULE_NAME = 'ws.components.landingCard'
 
 angular.module MODULE_NAME, []
 

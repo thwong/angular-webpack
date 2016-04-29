@@ -4,8 +4,14 @@ TemplateLandingController = (
   TemplateLandingFactory
 ) ->
   'ngInject'
-  console.log 'template landing controller', TemplateLandingFactory
-  @language = TemplateLandingFactory.language
+  
+  landing = @
+
+  landing.language = TemplateLandingFactory.language
+
+  landing.$routerOnActivate = ->
+    TemplateLandingFactory.getTopList().then (list) ->
+      landing.topList = list
 
   return
 
