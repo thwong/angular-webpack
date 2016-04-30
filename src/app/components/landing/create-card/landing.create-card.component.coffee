@@ -1,10 +1,10 @@
 'use strict'
 
 MODULE         = require '../../components.module.coffee'
-TEMPLATE       = require './landing.list.template.coffee'
-CONTROLLER     = require './landing.list.controller.coffee'
-LANGUAGE       = require './landing.list.translation.json'
-COMPONENT_NAME = 'landingList'
+HTML           = require './landing.create-card.ng.html'
+CONTROLLER     = require './landing.create-card.controller.coffee'
+LANGUAGE       = require './landing.create-card.translation.json'
+COMPONENT_NAME = 'landingCreateCard'
 
 angular.module MODULE.name
   .config ($translateProvider) ->
@@ -12,13 +12,12 @@ angular.module MODULE.name
 
 angular.module MODULE.name
   .component COMPONENT_NAME,
-    template: TEMPLATE.html
+    template: HTML
     controller: CONTROLLER.handler
     controllerAs: CONTROLLER.name
     bindings:
-      cpStyle: '<'
+      buttonLink: '@'
       cpLang: '<'
-      cpData: '<'
-      cpComponents: '<'
+      cpStyle: '<'
 
 module.exports = name: COMPONENT_NAME

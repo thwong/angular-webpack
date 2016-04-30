@@ -1,8 +1,17 @@
 <section class="{{::landingList.style.backgroundClass}}">
   <div class="container container-large">
     <h3 class="{{::landingList.style.titleClass}}">{{::landingList.language.title}}</h3>
+    <ul class="{{::landingList.style.listClass}}">
+      <li class="listItem listItem-blue">
+        <!-- Create Button -->
+        <landing-create-card
+          cp-style="::landingList.components.createCard.style"
+          cp-lang="::landingList.components.createCard.lang"
+          button-link="{{::landingList.data.buttonLink}}">
+        </landing-create-card>
+      </li>
+      <div class="clr"></div>
+    </ul>
+    <div class="clr"></div>
   </div>
-  <ul class="">
-    
-  </ul>
 </section>
