@@ -1,30 +1,16 @@
-R = require 'ramda'
+DEFAULT_CONFIG = require './landing.create-card.config.coffee'
 
 LandingCreateCardController = (
   $translate
 ) ->
   'ngInject'
 
-  landingList = @
+  landingCreateCard = @
 
-  landingList.$onInit = ->
-    console.log 'on card init'
-    landingList.style = angular.extend DEFAULT_STYLE, landingList.cpStyle
-    translateLang()
-
-  translateLang = ->
-    languageMap = angular.extend DEFAULT_LANG, landingList.cpLang
-    landingList.language = {}
-    R.forEach (pair) ->
-      [key, value] = pair
-      landingList.language[key] = $translate.instant value
-    , R.toPairs languageMap
-
-  DEFAULT_STYLE =
-    backgroundClass: 'createCampaign'
-
-  DEFAULT_LANG =
-    label: 'landing-create-card.create-card'
+  landingCreateCard.$onInit = ->
+    CONFIG = angular.extend DEFAULT_CONFIG, landingCreateCard.config
+    landingCreateCard.style = CONFIG.style
+    landingCreateCard.language = CONFIG.language
 
   return
 

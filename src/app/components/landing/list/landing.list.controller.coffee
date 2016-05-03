@@ -1,42 +1,21 @@
-R = require 'ramda'
+DEFAULT_CONFIG = require './landing.list.config.coffee'
 
 LandingListController = (
-  $translate
+  
 ) ->
   'ngInject'
 
   landingList = @
 
   landingList.$onInit = ->
-    landingList.style = angular.extend DEFAULT_STYLE, landingList.cpStyle
-    landingList.language = translateLang DEFAULT_LANG, landingList.cpLang
-    landingList.components = angular.extend DEFAULT_COMPONENTS, landingList.cpComponents
-    landingList.data = angular.extend DEFAULT_DATA, landingList.cpData
-    console.log landingList.components, landingList.data
+    landingList = angular.extend landingList, DEFAULT_CONFIG, landingList.config
+    console.log 'landing list init', landingList.list
+    landingList.cards = landingList.list ? landingList.dataService.samples
 
-  translateLang = (_default, _override) ->
-    languageMap = angular.extend _default, _override
-    language = {}
-    R.forEach (pair) ->
-      [key, value] = pair
-      language[key] = $translate.instant value
-    , R.toPairs languageMap
-
-  DEFAULT_STYLE =
-    backgroundClass: 'section sectionBuildCampaign pt-60'
-    titleClass: 'title light color-white ta-c tab-mb-20 phn-mb-20'
-    listClass: 'campaignDetailTiles'
-
-  DEFAULT_LANG =
-    title: 'landing-list.title'
-
-  DEFAULT_COMPONENTS =
-    createCard:
-      style: null
-      language: null
-
-  DEFAULT_DATA =
-    buttonLink: 'https://www.workspan.com'
+  fetchList = (stageFilter, pageToken, pageSize) ->
+    landingList.dataService.get stageFilter, pageToken, pageSize
+    .then (cards) ->
+      if pageToken then landingList.cards.concat cards else landingList.cards = cards
 
   return
 

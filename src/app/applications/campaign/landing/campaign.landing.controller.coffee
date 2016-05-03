@@ -1,18 +1,15 @@
-CampaignLandingController = (
+CONFIG = require './campaign.landing.config.coffee'
 
+CampaignLandingController = (
+  $q
+  $timeout
 ) ->
   'ngInject'
 
   campaignLanding = @
 
   campaignLanding.$onInit = ->
-    campaignLanding.myCampaigns =
-      lang:
-        title: 'campaign_landing.build_campaigns'
-      components:
-        createCard:
-          lang:
-            label: 'campaign_landing.create_a_campaign'
+    campaignLanding.config = CONFIG
 
   return
 

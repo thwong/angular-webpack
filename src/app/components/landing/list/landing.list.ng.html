@@ -1,16 +1,30 @@
 <section class="{{::landingList.style.backgroundClass}}">
   <div class="container container-large">
-    <h3 class="{{::landingList.style.titleClass}}">{{::landingList.language.title}}</h3>
+    <h3 class="{{::landingList.style.titleClass}}" translate="{{::landingList.language.title}}"></h3>
+
+    <div class="listGridView mb-25">
+        <div class="fr phn-fn">
+            <div class="selectWrapper"><select class="selectDropdown hidden">
+                <option>Show All</option>
+                <option>Starred</option>
+                <option>Proposed</option>
+                <option>Build</option>
+                <option>Run</option>
+                <option>Done</option>
+            </select><div class="styledSelect">Show All</div><ul class="selectOptions" style=""><li>Show All</li><li>Starred</li><li>Proposed</li><li>Build</li><li>Run</li><li>Done</li></ul></div>
+        </div>
+        <div class="clr"></div>
+    </div>
+
     <ul class="{{::landingList.style.listClass}}">
-      <li class="listItem listItem-blue">
+      <li class="listItem listItem-blue" ng-if="::landingList.options.showCreateLink">
         <!-- Create Button -->
         <landing-create-card
-          cp-style="::landingList.components.createCard.style"
-          cp-lang="::landingList.components.createCard.lang"
-          button-link="{{::landingList.data.buttonLink}}">
+          config="::landingList.components.createCard.config"
+          create-link="{{::landingList.components.createCard.createLink}}">
         </landing-create-card>
       </li>
-      <li class="listItem">
+      <li class="listItem" ng-repeat="card in landingList.cards">
         <landing-card></landing-card>
       </li>
       <div class="clr"></div>

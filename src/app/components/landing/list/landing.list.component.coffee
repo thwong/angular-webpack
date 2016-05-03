@@ -16,9 +16,7 @@ angular.module MODULE.name
     controller: CONTROLLER.handler
     controllerAs: CONTROLLER.name
     bindings:
-      cpStyle: '<'
-      cpLang: '<'
-      cpData: '<'
-      cpComponents: '<'
+      config: '<'
+      list: '<'
 
 module.exports = name: COMPONENT_NAME
