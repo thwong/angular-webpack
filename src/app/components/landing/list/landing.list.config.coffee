@@ -1,4 +1,3 @@
-
 LandingListConfig = 
   style:
     backgroundClass: 'section sectionBuildCampaign pt-60'

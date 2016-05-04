@@ -16,7 +16,7 @@ angular.module MODULE.name
         url: '/_ah/api/marketing_campaign/v1/list_campaigns'
         method: 'GET'
       .then (resp) ->
-        defer.resolve resp.data
+        defer.resolve resp.data.my_campaigns
       , ->
         defer.reject [] 
       defer.promise

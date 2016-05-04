@@ -16,8 +16,7 @@ angular.module MODULE.name
     controller: CONTROLLER.handler
     controllerAs: CONTROLLER.name
     bindings:
-      cardModel: '<'
-      cpLang: '<'
-      cpStyle: '<'
+      config: '<'
+      card: '<'
 
 module.exports = name: COMPONENT_NAME
