@@ -7,10 +7,9 @@ LandingListConfig =
   language:
     title: 'landing-list.title'
   dataService:
-    samples: [1..3]
-    get: ->
+    get: (stageFilter, pageToken, pageSize) ->
       then: (cb) ->
-        cb [1..3]
+        cb items: [1..pageSize], next_page_token: 'next_page'
   options:
     showCreateLink: true
     initialPageSize: 3

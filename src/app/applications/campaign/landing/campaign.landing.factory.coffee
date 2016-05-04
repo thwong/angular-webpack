@@ -1,36 +1,27 @@
-'use strict'
+MODULE = require '../campaign.app.module.coffee'
+DEFAULT_CONFIG = require './campaign.landing.config.coffee'
 
-R                           = require 'ramda'
-MODULE                      = require '../campaign.app.module.coffee'
-LANDING_TRANSLATION         = require './campaign.landing.translation.json'
-CAMPAGIN_SERVICE            = require '../services/campaign.services.coffee'
+factory = {}
 
 angular.module MODULE.name
-  .config ($translateProvider) ->
-    'ngInject'
-    $translateProvider.translations 'en', LANDING_TRANSLATION
+.factory 'CampaignLandingFactory', (
+  $q
+) ->
+  'ngInject'
 
-angular.module MODULE.name
-  .factory 'TemplateLandingFactory', (
-      $translate
-      $q
-      CampaignService
-    ) ->
-    'ngInject'
+  factory.init = ->
+    setupConfig()
 
-    # console.log CampaignService
+  getMyCampaigns = () ->
+    defer = $q.defer()
+    defer.resolve items: [1..2]
+    defer.promise
 
-    # factory = R.clone TEMPLATE_LANDING_INTERFACE
+  setupConfig = ->
+    factory.config = DEFAULT_CONFIG
+    factory.config.myCampaigns.dataService =
+      get: getMyCampaigns
 
-    # factory.language =
-    #   topList:
-    #     title: $translate.instant 'campaign_landing_page.build_campaigns'
-    
-    # factory.getTopList = ->
-    #   defer = $q.defer()
-    #   CampaignService.getMyCampaigns().then (campaigns) ->
-    #     console.log 'got my campaigns list', campaigns
-    #   defer.resolve [{'name': 'a'}]
-    #   defer.promise
+  factory
 
-    factory
+module.exports = factory

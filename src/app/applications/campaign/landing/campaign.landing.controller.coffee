@@ -1,15 +1,16 @@
-CONFIG = require './campaign.landing.config.coffee'
+
+LandingFactory = require './campaign.landing.factory.coffee'
 
 CampaignLandingController = (
-  $q
-  $timeout
+  CampaignLandingFactory
 ) ->
   'ngInject'
 
   campaignLanding = @
 
   campaignLanding.$onInit = ->
-    campaignLanding.config = CONFIG
+    CampaignLandingFactory.init()
+    campaignLanding.config = CampaignLandingFactory.config
 
   return
 

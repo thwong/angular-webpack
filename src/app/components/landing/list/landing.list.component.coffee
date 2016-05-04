@@ -17,6 +17,5 @@ angular.module MODULE.name
     controllerAs: CONTROLLER.name
     bindings:
       config: '<'
-      list: '<'
 
 module.exports = name: COMPONENT_NAME
