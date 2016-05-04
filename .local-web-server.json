@@ -2,6 +2,7 @@
   "port": 9000,
   "directory": "dist",
   "rewrite": [
-    { "from": "/campaign/*", "to": "/campaign/index.html" }
+    { "from": "/campaign/*", "to": "/campaign/index.html" },
+    { "from": "/_ah/*", "to": "http://localhost:8080/_ah/$1"}
   ]
 }
