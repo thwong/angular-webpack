@@ -1,25 +1,27 @@
 'use strict'
 
 MODULE         = require '../campaign.app.module.coffee'
+TEMPLATE       = require './campaign.collaborator.template.coffee'
+ABOUT_SECTION  = require './about/campaign.collaborator.about.component.coffee'
+GOALS_SECTION  = require './goals/campaign.collaborator.goals.component.coffee'
 COMPONENT_NAME = 'campaignCollaborator'
 
-(angular.module MODULE.name
-  .component 'campaignCollaboratorAboutSection',
-    template: 'This is the about section'
-)
-
-(angular.module MODULE.name
+angular.module MODULE.name
   .component COMPONENT_NAME,
-    template: '<div>This is the campaign collaborator page</div><ng-outlet></ng-outlet>'
+    template: TEMPLATE.html
     $routeConfig: [
       {
         path: '/'
         name: 'CampaignCollaboratorAboutSection'
-        component: 'campaignCollaboratorAboutSection'
+        component: ABOUT_SECTION.name
         useAsDefault: true
       }
+      {
+        path: '/goals'
+        name: 'CampaignCollaboratorGoalsSection'
+        component: GOALS_SECTION.name
+      }
     ]
-)
 
 module.exports =
   name: COMPONENT_NAME
