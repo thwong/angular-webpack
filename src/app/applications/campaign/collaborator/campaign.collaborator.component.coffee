@@ -2,6 +2,7 @@
 
 MODULE         = require '../campaign.app.module.coffee'
 TEMPLATE       = require './campaign.collaborator.template.coffee'
+CONTROLLER     = require './campaign.collaborator.controller.coffee'
 ABOUT_SECTION  = require './about/campaign.collaborator.about.component.coffee'
 GOALS_SECTION  = require './goals/campaign.collaborator.goals.component.coffee'
 COMPONENT_NAME = 'campaignCollaborator'
@@ -9,6 +10,8 @@ COMPONENT_NAME = 'campaignCollaborator'
 angular.module MODULE.name
   .component COMPONENT_NAME,
     template: TEMPLATE.html
+    controller: CONTROLLER.handler
+    controllerAs: CONTROLLER.name
     $routeConfig: [
       {
         path: '/'

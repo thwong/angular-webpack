@@ -1,3 +1,23 @@
-<div>This is the campaign collaborator page</div>
-<div>Some tab section</div>
+<section class="section sectionCampaign sectionPageEdit phn-pt-70">
+  <div class="container">
+    <div class="heading ta-c has-edit-options ma mb-60 phn-grid-full phn-mb-20">
+      <h2 class="relative inline-block title favourite">
+        Connected Healthcare Campaign
+      </h2> 
+    </div>
+  </div>
+</section>
+
+<section class="sectionPageNavigation">
+  <div class="container">
+    <ul class="fl sectionPageNavigation_list">
+      <li ng-repeat="tab in campaignCollaborator.tabs">
+        <a ng-class="{active: tab.selected}" ng-link="['{{::tab.link}}']">{{::tab.name}}</a>
+      </li>
+      <div class="clr"></div>
+    </ul>
+    <div class="clr"></div>
+  </div>
+</section>
+
 <ng-outlet></ng-outlet>
