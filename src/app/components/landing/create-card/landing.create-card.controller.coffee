@@ -5,13 +5,13 @@ LandingCreateCardController = (
 ) ->
   'ngInject'
 
-  landingCreateCard = @
-
-  landingCreateCard.$onInit = ->
-    CONFIG = angular.extend DEFAULT_CONFIG, landingCreateCard.config
-    landingCreateCard.style = CONFIG.style
-    landingCreateCard.language = CONFIG.language
+  @$onInit = ->
+    CONFIG = angular.extend DEFAULT_CONFIG, @config
+    @style = CONFIG.style
+    @language = CONFIG.language
 
   return
 
-module.exports = name: 'landingCreateCard', handler: LandingCreateCardController
+module.exports =
+  name: 'landingCreateCard'
+  handler: LandingCreateCardController

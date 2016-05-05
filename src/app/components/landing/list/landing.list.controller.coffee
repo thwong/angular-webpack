@@ -21,4 +21,6 @@ LandingListController = (
 
   return
 
-module.exports = name: 'landingList', handler: LandingListController
+module.exports =
+  name: 'landingList'
+  handler: LandingListController

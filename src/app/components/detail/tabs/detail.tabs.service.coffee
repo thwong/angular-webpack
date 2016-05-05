@@ -1,6 +1,4 @@
-MODULE = require '../../components.module.coffee'
-
-angular.module MODULE.name
+angular.module WS_COMPONENT
   .service 'DetailTabsService', (
     R
   ) ->

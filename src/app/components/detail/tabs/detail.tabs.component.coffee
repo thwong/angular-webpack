@@ -1,11 +1,8 @@
-'use strict'
-
-MODULE         = require '../../components.module.coffee'
 HTML           = require './detail.tabs.ng.html'
 CONTROLLER     = require './detail.tabs.controller.coffee'
 COMPONENT_NAME = 'detailTabs'
 
-angular.module MODULE.name
+angular.module WS_COMPONENT
   .component COMPONENT_NAME,
     template: HTML
     controller: CONTROLLER.handler
@@ -14,4 +11,5 @@ angular.module MODULE.name
       config: '<'
       tabs: '<'
 
-module.exports = name: COMPONENT_NAME
+module.exports =
+  name: COMPONENT_NAME

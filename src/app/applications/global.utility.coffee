@@ -1,12 +1,16 @@
 GLOBAL_TRANSLATION  = require './global.translation.json'
-COMPONENT_MODULE    = require '../components/components.module.coffee'
 R                   = require 'ramda'
+
+global.WS_COMPONENT = do ->
+  __name = 'WS_COMPONENT'
+  angular.module __name, []
+  __name
 
 WS_APP_DEPENDENCIES = [
   'ngComponentRouter'
   'pascalprecht.translate'
   'ngSanitize'
-  COMPONENT_MODULE.name
+  WS_COMPONENT
 ]
 
 global.WS_ADD_TRANSLATION = (module, translation) ->

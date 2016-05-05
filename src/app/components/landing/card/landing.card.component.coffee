@@ -1,22 +1,15 @@
-'use strict'
-
-MODULE         = require '../../components.module.coffee'
-TEMPLATE       = require './landing.card.template.coffee'
+HTML           = require './landing.card.ng.html'
 CONTROLLER     = require './landing.card.controller.coffee'
-LANGUAGE       = require './landing.card.translation.json'
 COMPONENT_NAME = 'landingCard'
 
-angular.module MODULE.name
-  .config ($translateProvider) ->
-    $translateProvider.translations 'en', LANGUAGE
-
-angular.module MODULE.name
+angular.module WS_COMPONENT
   .component COMPONENT_NAME,
-    template: TEMPLATE.html
+    template: HTML
     controller: CONTROLLER.handler
     controllerAs: CONTROLLER.name
     bindings:
       config: '<'
       card: '<'
 
-module.exports = name: COMPONENT_NAME
+module.exports =
+  name: COMPONENT_NAME

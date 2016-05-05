@@ -2,6 +2,6 @@ LandingCreateCardConfig =
   style:
     backgroundClass: 'createCampaign'
   language:
-    label: 'landing-create-card.create-card'
+    label: 'Create a Card'
 
 module.exports = LandingCreateCardConfig

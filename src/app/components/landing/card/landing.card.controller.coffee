@@ -13,4 +13,6 @@ LandingCardController = (
 
   return
 
-module.exports = name: 'landingCard', handler: LandingCardController
+module.exports =
+  name: 'landingCard'
+  handler: LandingCardController

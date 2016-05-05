@@ -1,4 +1,3 @@
-MODULE = require '../../components.module.coffee'
 MODEL_NAME = 'LandingCard'
 
 LandingCard = (data = {}) ->
@@ -6,7 +5,7 @@ LandingCard = (data = {}) ->
   @description = data.description
   @link = data.link
 
-angular.module MODULE.name
+angular.module WS_COMPONENT
   .factory MODEL_NAME, ->
     LandingCard
 
