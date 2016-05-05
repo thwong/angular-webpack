@@ -1,3 +1,5 @@
 require '../global.utility.coffee'
-require './campaign.app.module.coffee'
-require './campaign.app.config.coffee'
+
+WS_DEFINE_APP 'WS_CAMPAIGN'
+
+WS_SET_ROOT_COMPONENT WS_CAMPAIGN, require './frame/campaign.frame.component.coffee'
