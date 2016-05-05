@@ -13,7 +13,7 @@ module.exports = function(mode) {
       'angular-sanitize',         // Required for angular-translation sanitize security setting
       'ramda'
     ],
-    'campaign-app': './src/app/applications/campaign/campaign.app.coffee'
-    // 'plan-app': './src/app/applications/plan/plan.app.coffee'
+    'campaign-app': './src/app/applications/campaign/campaign.app.coffee',
+    'plan-app': './src/app/applications/plan/plan.app.coffee'
   };
 };

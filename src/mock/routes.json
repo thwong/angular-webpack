@@ -1,3 +1,4 @@
 {
-  "/_ah/api/marketing_campaign/v1/list_campaigns": "/list_campaigns"
+  "/_ah/api/marketing_campaign/v1/list_campaigns": "/list_campaigns",
+  "/_ah/api/marketing_plan/v1/list_plans": "/list_plans"
 }
