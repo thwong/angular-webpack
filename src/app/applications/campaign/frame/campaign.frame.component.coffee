@@ -1,13 +1,13 @@
-COMPONENT_MODULE       = require '../../../components/components.module.coffee'
-MODULE                 = require '../campaign.app.module.coffee'
-TEMPLATE               = require './campaign.frame.template.coffee'  
 CAMPAIGN_LANDING       = require '../landing/campaign.landing.component.coffee'
 CAMPAIGN_COLLABORATOR  = require '../collaborator/campaign.collaborator.component.coffee'
+HEADER                 = require '../../../components/app/header/app.header.component.coffee'
+FOOTER                 = require '../../../components/app/footer/app.footer.component.coffee'
+HTML                   = require './campaign.frame.ng.html'
 COMPONENT_NAME         = 'campaignFrame'
 
-angular.module MODULE.name
+angular.module WS_CAMPAIGN
   .component COMPONENT_NAME,
-    template: TEMPLATE.html
+    template: HTML
     $routeConfig: [
       # Campaign Landing Page
       { 

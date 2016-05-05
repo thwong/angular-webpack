@@ -1,12 +1,12 @@
-MODULE = require '../../campaign.app.module.coffee'
-CONTROLLER = require './campaign.collaborator.about.controller.coffee'
-TEMPLATE = require './campaign.collaborator.about.template.coffee'
+CONTROLLER     = require './campaign.collaborator.about.controller.coffee'
+HTML           = require './campaign.collaborator.about.ng.html'
 COMPONENT_NAME = 'campaignCollaboratorAbout'
 
-angular.module MODULE.name
+angular.module WS_CAMPAIGN
   .component COMPONENT_NAME,
-    template: TEMPLATE.html
+    template: HTML
     controller: CONTROLLER.handler
     controllerAs: CONTROLLER.name
 
-module.exports = name: COMPONENT_NAME
+module.exports =
+  name: COMPONENT_NAME

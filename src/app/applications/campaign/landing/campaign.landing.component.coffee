@@ -1,19 +1,15 @@
-'use strict'
-
-MODULE                    = require '../campaign.app.module.coffee'
 CAMPAIGN_LANDING_FACTORY  = require './campaign.landing.factory.coffee'
-TEMPLATE                  = require './campaign.landing.template.coffee'
+LANDING_LIST              = require '../../../components/landing/list/landing.list.component.coffee'
+HTML                      = require './campaign.landing.ng.html'
 CONTROLLER                = require './campaign.landing.controller.coffee'
 LANGUAGE                  = require './campaign.landing.translation.json'
 COMPONENT_NAME            = 'campaignLanding'
 
-angular.module MODULE.name
-  .config ($translateProvider) ->
-    $translateProvider.translations 'en', LANGUAGE
+WS_ADD_TRANSLATION WS_CAMPAIGN, LANGUAGE
 
-angular.module MODULE.name
+angular.module WS_CAMPAIGN
   .component COMPONENT_NAME,
-    template: TEMPLATE.html
+    template: HTML
     controller: CONTROLLER.handler
     controllerAs: CONTROLLER.name
 

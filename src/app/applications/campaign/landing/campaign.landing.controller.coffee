@@ -1,4 +1,3 @@
-
 LandingFactory = require './campaign.landing.factory.coffee'
 
 CampaignLandingController = (
@@ -6,12 +5,12 @@ CampaignLandingController = (
 ) ->
   'ngInject'
 
-  campaignLanding = @
-
-  campaignLanding.$onInit = ->
+  @$onInit = ->
     CampaignLandingFactory.init()
-    campaignLanding.config = CampaignLandingFactory.config
+    @config = CampaignLandingFactory.config
 
   return
 
-module.exports = name: 'campaignLanding', handler: CampaignLandingController
+module.exports =
+  name: 'campaignLanding'
+  handler: CampaignLandingController

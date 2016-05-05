@@ -10,4 +10,6 @@ CampaignCollaboratorController = (
 
   return
 
-module.exports = name: 'campaignCollaborator', handler: CampaignCollaboratorController
+module.exports =
+  name: 'campaignCollaborator'
+  handler: CampaignCollaboratorController

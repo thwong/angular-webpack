@@ -5,9 +5,11 @@ CampaignCollaboratorGoalsController = (
 ) ->
   'ngInject'
 
-  @.$onInit = ->
+  @$onInit = ->
     CampaignCollaboratorFactory.selectTab name: 'Goals'
 
   return
 
-module.exports = name: 'campaignCollaboratorGoals', handler: CampaignCollaboratorGoalsController
+module.exports =
+  name: 'campaignCollaboratorGoals'
+  handler: CampaignCollaboratorGoalsController

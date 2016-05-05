@@ -1,11 +1,9 @@
-MODULE = require '../campaign.app.module.coffee'
 DETAIL_TABS_SERVICE = require '../../../components/detail/tabs/detail.tabs.service.coffee'
 
 factory = {}
 
-angular.module MODULE.name
+angular.module WS_CAMPAIGN
   .factory 'CampaignCollaboratorFactory', (
-    R
     DetailTabsService
   ) ->
     'ngInject'

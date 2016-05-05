@@ -1,11 +1,3 @@
-'use strict'
+angular.module (global.WS_CAMPAIGN = 'ws.campaign'), WS_APP_DEPENDENCIES
 
-MODULE_NAME = 'ws.campaign'
-
-angular.module MODULE_NAME, [
-  'ngComponentRouter'
-  'pascalprecht.translate'
-  'ngSanitize'
-]
-
-module.exports = name: MODULE_NAME
+module.exports = name: WS_CAMPAIGN

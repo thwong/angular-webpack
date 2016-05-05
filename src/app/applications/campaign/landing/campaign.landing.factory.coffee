@@ -1,11 +1,10 @@
-MODULE = require '../campaign.app.module.coffee'
 DEFAULT_CONFIG = require './campaign.landing.config.coffee'
 CAMPAIGN_SERVICE = require '../services/campaign.services.coffee'
 LANDING_CARD_MODEL = require '../../../components/landing/card/landing.card.model.coffee'
 
 factory = {}
 
-angular.module MODULE.name
+angular.module WS_CAMPAIGN
 .factory 'CampaignLandingFactory', (
   CampaignService
   LandingCard

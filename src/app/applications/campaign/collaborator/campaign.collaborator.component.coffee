@@ -1,17 +1,13 @@
-'use strict'
-
-MODULE         = require '../campaign.app.module.coffee'
-COMPONENT      = require '../../../components/components.module.coffee'
-TEMPLATE       = require './campaign.collaborator.template.coffee'
+HTML           = require './campaign.collaborator.ng.html'
 CONTROLLER     = require './campaign.collaborator.controller.coffee'
 ABOUT_SECTION  = require './about/campaign.collaborator.about.component.coffee'
 GOALS_SECTION  = require './goals/campaign.collaborator.goals.component.coffee'
 TAB            = require '../../../components/detail/tabs/detail.tabs.component.coffee'
 COMPONENT_NAME = 'campaignCollaborator'
 
-angular.module MODULE.name
+angular.module WS_CAMPAIGN
   .component COMPONENT_NAME,
-    template: TEMPLATE.html
+    template: HTML
     controller: CONTROLLER.handler
     controllerAs: CONTROLLER.name
     $routeConfig: [
