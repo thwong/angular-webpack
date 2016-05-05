@@ -1,0 +1,21 @@
+<nav class="fr navWrapper phn-hide">
+    <ul class="navigation">
+        <li>
+            <a href="" ng-click="appHeaderMenu.toggleMenu()" ng-class="{active: appHeaderMenu.active}">
+                <p class="fl">Sample User</p>
+                <div class="fl userImg ml-20 mr-15 tab-ml-10 tab-mr-5">
+                    <img src="http://www.huffingtonpost.com/contributors/jessica-alba/headshot.jpg">
+                </div>
+                <i class="fl icon-down-open-big iconDown"></i>
+                <div class="clr"></div>
+            </a>
+            <div class="optionsDropdownWrapper js-options-dropdown" ng-class="{show: appHeaderMenu.active}">
+                <ul class="optionsDropdown">
+                    <li><a href="/campaigns/">Campaigns App</a></li>
+                    <li><a href="/plans/">Plans App</a></li>
+                </ul>
+            </div>
+        </li>
+        <div class="clr"></div>
+    </ul>
+</nav>
