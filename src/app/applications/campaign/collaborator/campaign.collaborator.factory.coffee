@@ -1,23 +1,21 @@
 MODULE = require '../campaign.app.module.coffee'
+DETAIL_TABS_SERVICE = require '../../../components/detail/tabs/detail.tabs.service.coffee'
 
 factory = {}
 
 angular.module MODULE.name
   .factory 'CampaignCollaboratorFactory', (
     R
+    DetailTabsService
   ) ->
     'ngInject'
 
-    factory.init = ->
-      factory.tabs = []
+    factory.tabs = [
+      { name: 'Strategy', link: '/campaign/collaborator/1' }
+      { name: 'Goals', link: '/campaign/collaborator/1/goals'}
+    ]
 
-    factory.selectTab = (_tab) ->
-      R.forEach (tab) ->
-        tab.selected = tab.name is _tab.name
-      , factory.tabs
-
-    factory.addTab = (tab)->
-      factory.tabs.push tab
+    factory.selectTab = DetailTabsService.bind tabs: factory.tabs
 
     factory
 

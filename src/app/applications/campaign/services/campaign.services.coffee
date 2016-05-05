@@ -17,8 +17,7 @@ angular.module MODULE.name
         method: 'GET'
       .then (resp) ->
         defer.resolve resp.data.my_campaigns
-      , ->
-        defer.reject [] 
+      , defer.reject
       defer.promise
 
     return

@@ -6,9 +6,6 @@ CampaignCollaboratorController = (
   'ngInject'
 
   @$onInit = ->
-    CampaignCollaboratorFactory.init()
-    CampaignCollaboratorFactory.addTab name: 'Strategy', link: 'CampaignCollaboratorAboutSection'
-    CampaignCollaboratorFactory.addTab name: 'Goals', link: 'CampaignCollaboratorGoalsSection'
     @tabs = CampaignCollaboratorFactory.tabs
 
   return

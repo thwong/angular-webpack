@@ -8,16 +8,6 @@
   </div>
 </section>
 
-<section class="sectionPageNavigation">
-  <div class="container">
-    <ul class="fl sectionPageNavigation_list">
-      <li ng-repeat="tab in campaignCollaborator.tabs">
-        <a ng-class="{active: tab.selected}" ng-link="['{{::tab.link}}']">{{::tab.name}}</a>
-      </li>
-      <div class="clr"></div>
-    </ul>
-    <div class="clr"></div>
-  </div>
-</section>
+<detail-tabs tabs="campaignCollaborator.tabs"></detail-tabs>
 
 <ng-outlet></ng-outlet>
