@@ -8,7 +8,8 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = function(mode) {
   return {
-    test: /\.css$/,
-    loader: mode.isTest ? 'null' : ExtractTextPlugin.extract('style', 'css?sourceMap!postcss')
+    test: /\.scss$/,
+    loader: mode.isTest ? 'null' : 'style!css!sass'
+    // loader: mode.isTest ? 'null' : ExtractTextPlugin.extract('style', 'css?sourceMap!postcss')
   };
 };

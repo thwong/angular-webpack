@@ -3,6 +3,7 @@ HTML                      = require './plan.landing.ng.html'
 CONTROLLER                = require './plan.landing.controller.coffee'
 LANGUAGE                  = require './plan.landing.translation.json'
 CAMPAIGN_LANDING_FACTORY  = require './plan.landing.factory.coffee'
+PLAN_STYLE                = require './plan.landing.scss'
 COMPONENT_NAME            = 'planLanding'
 
 WS_ADD_TRANSLATION WS_PLAN, LANGUAGE
