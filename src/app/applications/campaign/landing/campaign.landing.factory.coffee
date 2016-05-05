@@ -24,6 +24,7 @@ angular.module MODULE.name
         new LandingCard
           title: item.name
           description: item.qualitative_goal
+          link: "/campaign/collaborator/#{item.campaign_id}"
       , data.items
       defer.resolve items: __cards
     defer.promise
