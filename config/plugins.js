@@ -4,6 +4,7 @@
  * List: http://webpack.github.io/docs/list-of-plugins.html
  */
 var path = require('path');
+var R = require('ramda');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -13,28 +14,38 @@ var CommonsChunkPlugin = require('webpack-vendor-chunk-plugin');
 module.exports = function(mode) {
   var plugins = [];
 
-  // Skip rendering index.html in test mode
-  if (!mode.isTest) {
-    // Reference: https://github.com/ampedandwired/html-webpack-plugin
-    // Render index.html`
-    plugins.push(
-
-      new HtmlWebpackPlugin({
+  var apps = {
+    'campaign-app': new HtmlWebpackPlugin({
         template: './src/app/applications/campaign/campaign.app.html',
         inject: 'body',
         chunks: ['vendor', 'campaign-app'],
         chunksSortMode: 'dependency',
         filename: 'campaign/index.html'
       }),
-
-      new HtmlWebpackPlugin({
+    'plan-app': new HtmlWebpackPlugin({
         template: './src/app/applications/plan/plan.app.html',
         inject: 'body',
         chunks: ['vendor', 'plan-app'],
         chunksSortMode: 'dependency',
         filename: 'plan/index.html'
-      }),
+      })
+  };
 
+  // Skip rendering index.html in test mode
+  if (!mode.isTest) {
+    // Reference: https://github.com/ampedandwired/html-webpack-plugin
+    // Render index.html`
+    if (mode.app) {
+      plugins.push(apps[mode.app]);
+    } else {
+      R.forEach(function(key){
+        plugins.push(apps[key]);
+      }, R.keys(apps))
+    } 
+    // plugins.push(apps['campaign-app'])
+    // plugins.push(apps['plan-app'])
+
+    plugins.push(
       // Reference: https://github.com/webpack/extract-text-webpack-plugin
       // Extract css files
       // Disabled when in test mode or not in build mode

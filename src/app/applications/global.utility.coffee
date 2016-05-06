@@ -3,7 +3,10 @@ R                   = require 'ramda'
 
 global.WS_COMPONENT = do ->
   __name = 'WS_COMPONENT'
-  angular.module __name, []
+  try
+    angular.module __name
+  catch
+    angular.module __name, []
   __name
 
 WS_APP_DEPENDENCIES = [
@@ -20,7 +23,10 @@ global.WS_ADD_TRANSLATION = (module, translation) ->
       $translateProvider.translations 'en', translation
 
 global.WS_DEFINE_APP = (module) ->
-  angular.module module, WS_APP_DEPENDENCIES
+  try
+    angular.module module
+  catch
+    angular.module module, WS_APP_DEPENDENCIES
   angular.module module
     .config ($translateProvider, $locationProvider) ->
       'ngInject'
