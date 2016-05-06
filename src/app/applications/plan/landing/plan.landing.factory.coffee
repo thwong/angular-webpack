@@ -29,8 +29,6 @@ angular.module WS_PLAN
 
   setupConfig = ->
     factory.config = DEFAULT_CONFIG
-    factory.config.myPlans.dataService =
-      get: getMyPlans
     # Reference
     # factory.config.myPlans.dataService =
     #   get: getMyPlans
