@@ -1,4 +1,3 @@
-# angular.module (global.WS_COMPONENT = 'WS_COMPONENT'), []
 require '../../../applications/global.utility.coffee'
 require './app.footer.component.coffee'
 

@@ -1,7 +1,7 @@
 var specs = 'src/**/*.spec.coffee';
 
 if(process.env.npm_config_module) {
-  specs = 'src/' + process.env.npm_config_module + '/**/*.spec.coffee';
+  specs = 'src/app/' + process.env.npm_config_module + '/**/*.spec.coffee';
 }
 
 // Reference: http://karma-runner.github.io/0.12/config/configuration-file.html
